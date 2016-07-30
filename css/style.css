@@ -39,8 +39,11 @@ h2 {
 }
 
 .content {
-	position: relative;
-	margin-top: 20%;
+	/*margin-top: 20%;*/
+	  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p {
@@ -48,4 +51,25 @@ p {
 	max-width: 39rem;
 	text-align: left;
 	margin: 1rem auto;
+}
+
+#section-2 {
+	/*
+	display: flex;
+  justify-content: center;
+  flex-direction: column;*/
+}
+
+.columns-80 {
+	/*margin-left: 20%;*/
+	max-width: 79.99%;
+}
+
+.sticky-title {
+	max-width: 19.99%;
+	width: 19.99%;
+	float: left;
+	position: absolute;
+	left: 0;
+	font-size: 1.2rem;
 }
