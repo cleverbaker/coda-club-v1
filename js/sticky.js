@@ -36,11 +36,13 @@ var stickyHeaders = (function() {
         var $nextSticky = $stickies.eq(i + 1),
             $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
 
+         //   console.log('$nextSticky = ', $nextSticky.html(), '\n$nextSticky.data("originalPosition") = ', $nextSticky.data('originalPosition'), "\n$thisSticky.data('originalHeight') = ", $thisSticky.data('originalHeight'));
+
         $thisSticky.addClass("fixed");
 
         if ($nextSticky.length > 0 && $thisSticky.offset().top >= $nextStickyPosition) {
 
-          $thisSticky.addClass("absolute").css("top", $nextStickyPosition);
+          $thisSticky.addClass("absolute").css("top", $nextStickyPosition - $thisSticky.parent().offset().top);
         }
 
       } else {
