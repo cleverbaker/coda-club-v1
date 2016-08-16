@@ -98,6 +98,10 @@ p {
 	font-size: 1.2rem;
 }*/
 
+.followWrap {
+	border-top: 1px #ddd dotted;
+}
+
 .followMeBar {
   background: #999;
   padding: 10px 2rem;
