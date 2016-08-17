@@ -114,6 +114,7 @@ p {
 }
 
 .followMeBar.fixed {
+	background: rgba(153, 153, 153, 0.8);
   position: fixed;
   top: 0;
   width: 10rem;
