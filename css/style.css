@@ -108,7 +108,7 @@ p {
   position: relative;
   z-index: 1;
   color: #fff;
-  width: 10rem;
+  width: 6rem;
   text-align: left;
   margin: 0;
 }
@@ -116,7 +116,7 @@ p {
 .followMeBar.fixed {
   position: fixed;
   top: 0;
-  width: 14rem;
+  width: 10rem;
   box-sizing: border-box;
   z-index: 0;
 }
